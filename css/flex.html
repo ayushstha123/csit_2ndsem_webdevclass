@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            display: flex;
+            /*This sets the container as a flex container*/
+            flex-direction: row-reverse;
+            /* Items will be laid out horizontally (row) */
+            justify-content: space-between;
+            /* Items will be spaced evenly along the main axis */
+        }
+        @media (max-width:400px){
+            div{
+                /* text-shadow: horizontal , vertical space,blur radius ,color ; */
+                text-shadow: 10px 40px 10px black;
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>item1</p>
+        <p>item2</p>
+        <p>item3</p>
+        <p>item4</p>
+
+    </div>
+</body>
+
+</html>
