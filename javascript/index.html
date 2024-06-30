@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <!-- in here script tag can be kept in body as well as head -->
+    <!-- in js we can implement javascript by using script tag -->
+     <h1 id="header">Hello CSIT</h1>
+     <button onclick=hello()>click me</button>
+    <script>
+        console.log("hello world")
+
+        //this is comment in js(this is single line comment )
+
+        /*
+        this is multiple line comment 
+        
+        this is comment 
+        hello world 
+        my name is ayush 
+        */
+
+
+        // what are dom elements
+        /*The Document Object Model (DOM) is a programming interface for web documents. It represents the page 
+        so that programs can change the document structure, style, and content. */
+        
+       const header=document.getElementById("header")  // this is a dom element that takes the id of the html tag and stores it in 
+        //the variable header
+        const tagname=document.getElementsByTagName("h1") 
+        //when using getElementsByTagName we get html collection An HTMLCollection is a collection of document elements.
+        console.log(tagname[0])
+
+        function hello(){
+            header.style.color="red"
+            header.style.backgroundColor="blue"
+            header.style.marginLeft="50px"
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input id="name" type="text" placeholder="Enter Name">
+        <input id="email" type="email" placeholder="Enter Email">
+        <input id="pass" type="password" placeholder="Enter Password">
+        <input onclick="validateFrom()" type="submit" value="Submit">
+    </form>
+    <script>
+        let name=document.getElementById('name')
+        let email=document.getElementById('email')
+        let pass=document.getElementById('pass')
+        name=name.value
+        email=email.value
+        pass=pass.value
+        function validateFrom(){
+            if(name=="" || email=="" || pass==""){
+                alert("please tapai ko name or email or pass khali cha")
+        }
+        
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const message="Hello K cha!"
+        console.log(message)
+        //shows the length of message
+        console.log(message.length) //12
+
+        //show the upper case of the letter
+        console.log(message.toUpperCase()) //HELLO K CHA!
+
+        //show the lower case of the letter
+        console.log(message.toLowerCase()) //hello k cha!
+
+        //index of k
+        console.log(message.indexOf("K")) //5
+
+        //charAt lets you find the character in the string
+        console.log(message.charAt(0)) //H
+
+        console.log(message.lastIndexOf("K"))
+
+        //to show the date
+        const date= new Date()
+        console.log(date)
+        console.log(date.getDate())
+        console.log(date.getFullYear())
+        console.log(date.getDay())
+        console.log(date.toLocaleTimeString())
+        console.log(date.toLocaleDateString())
+    </script>
+</body>
+</html>
